@@ -1,5 +1,6 @@
 var amqp = require('amqplib/callback_api');
 
+// connect to RabbitMQ server
 amqp.connect('amqp://localhost', function (error0, connection) {
 
     if (error0) {
@@ -7,6 +8,7 @@ amqp.connect('amqp://localhost', function (error0, connection) {
         throw error0;
     }
 
+    // we create a channel, which is where most of the API for getting things done resides
     connection.createChannel(function (error1, channel) {
         if (error1) {
             console.log("🚀 ~ file: send.js:12 ~ error1:", error1)

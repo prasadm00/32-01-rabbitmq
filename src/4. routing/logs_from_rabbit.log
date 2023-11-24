@@ -1,0 +1,4 @@
+ [*] Waiting for logs. To exit press CTRL+C
+args===>>> [ 'warning', 'error' ]
+ [x] error: 'Run. Run. Or it will explode.'
+ [x] warning: 'Run. Run. Or it will explode.'
